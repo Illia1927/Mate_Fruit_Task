@@ -17,6 +17,8 @@ import java.util.stream.Collectors;
 
 public class TradeShop {
 
+    final static long DAY_IN_MLS = 86_400_000;
+
     private List<Fruit> dataBase = new ArrayList<>();
 
     public void addFruits(List<Fruit> fruits, String pathToJsonFile) throws JsonProcessingException {
@@ -83,8 +85,6 @@ public class TradeShop {
     public List<Fruit> getAvailableFruits(Date date, Fruit.VariousFruit variousFruitType) {
         return getAvailableFruits(date).stream().filter(fruit -> variousFruitType == fruit.getVariousFruit()).collect(Collectors.toList());
     }
-
-    final static long DAY_IN_MLS = 86_400_000;
 
     List<Fruit> getAddedFruits(Date date){
         return dataBase.stream()

@@ -47,19 +47,7 @@ public class Fruit {
     public Fruit() {
     }
 
-
-    public void show() {
-        System.out.println(
-                "|-----------ONFO-----------" +
-                        "\n|Type of fruit : " + variousFruit.name() + ";" +
-                        "\n|Expiration Date : " + expirationDate + ";" +
-                        "\n|Date of made : " + creationDate + ";" +
-                        "\n|Price : " + price + " uan." +
-                        "\n|--------------------------");
-    }
-
     @Override
-
     public String toString() {
         return "Fruit{" +
                 "variousFruit=" + variousFruit +

@@ -76,8 +76,5 @@ public class Test {
         tradeShop.getAvailableFruits(date2).forEach(System.out::println);
 
         System.out.println();
-
-
-
     }
 }
