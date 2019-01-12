@@ -13,25 +13,23 @@ public class Test {
         List<Fruit> fruits = new ArrayList<>();
 
         Fruit apple = new Fruit();
-        LocalDate localDateOne = LocalDate.of(2019, 1, 1);
-        Date dateOne = Date.from(localDateOne.atStartOfDay(ZoneId.systemDefault()).toInstant());
+        LocalDate dateOfMade = LocalDate.of(2019, 1, 1);
+        Date dateOfMadeSave = Date.from(dateOfMade.atStartOfDay(ZoneId.systemDefault()).toInstant());
         apple.setVariousFruit(Fruit.VariousFruit.APPLE);
         apple.setExpirationDate(20);
-        apple.setCreationDate(dateOne);
+        apple.setCreationDate(dateOfMadeSave);
         apple.setPrice(100);
-        apple.show();
         fruits.add(apple);
 
         System.out.println();
 
         Fruit banana = new Fruit();
-        LocalDate localDateTwo = LocalDate.of(2018, 1, 1);
-        Date dateTwo = Date.from(localDateTwo.atStartOfDay(ZoneId.systemDefault()).toInstant());
+        LocalDate dateOfMadeOne = LocalDate.of(2018, 1, 1);
+        Date dateOfMadeSaveOne = Date.from(dateOfMadeOne.atStartOfDay(ZoneId.systemDefault()).toInstant());
         banana.setVariousFruit(Fruit.VariousFruit.BANANA);
         banana.setExpirationDate(30);
-        banana.setCreationDate(dateTwo);
+        banana.setCreationDate(dateOfMadeSaveOne);
         banana.setPrice(80);
-        banana.show();
         fruits.add(banana);
 
         TradeShop tradeShop = new TradeShop();
@@ -46,7 +44,6 @@ public class Test {
         panaepple.setExpirationDate(15);
         panaepple.setCreationDate(new Date());
         panaepple.setPrice(40);
-        panaepple.show();
         fruits.clear();
         fruits.add(panaepple);
 
