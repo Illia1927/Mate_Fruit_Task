@@ -1,0 +1,16 @@
+[ {
+  "variousFruit" : "APPLE",
+  "price" : 100,
+  "creationDate" : "17/12/2018",
+  "expirationDate" : 20
+}, {
+  "variousFruit" : "BANANA",
+  "price" : 80,
+  "creationDate" : "31/12/2017",
+  "expirationDate" : 30
+}, {
+  "variousFruit" : "PANAEPPLE",
+  "price" : 40,
+  "creationDate" : "17/12/2018",
+  "expirationDate" : 15
+} ]
